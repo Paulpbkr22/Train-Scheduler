@@ -1,0 +1,23 @@
+.jumbotron {
+    text-align: center;
+    background-color:mediumpurple;
+    color:greenyellow;
+}
+.card {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+.lead {
+    font-size: 50px;
+}
+
+.display-4 {
+    font-size: 80px;
+}
+
+.card-header {
+    background-color: orange;
+    color: white;
+}
