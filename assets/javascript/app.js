@@ -2,7 +2,7 @@
 
 
   // Your web app's Firebase configuration
-  var firebaseConfig = {
+  var config = {
     apiKey: "AIzaSyBKgZOfsvLSpHOMXgSAb_clpYGpcUo61cw",
     authDomain: "t-project-1e281.firebaseapp.com",
     databaseURL: "https://t-project-1e281.firebaseio.com",
@@ -12,7 +12,7 @@
     appId: "1:456854710271:web:bcde29230d1fbdae4369ca"
   };
 
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 
 var database = firebase.database();
 
@@ -38,11 +38,16 @@ $("#submit-button").on("click", function(event){
         destination: destination,
         time: time,
         frequency: frequency,
-        // dateAdded: firebase.database.ServerValue.TIMESTAMP
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
 
         
 
     });
+
+    $("#name-input").val("");
+    $("#destination-input").val("");
+    $("#time-input").val("");
+    $("#frequency-input").val("");
 
     console.log();
 });
